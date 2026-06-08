@@ -1,59 +1,90 @@
-# Smart Posture Monitoring and Feedback System
+# Smart Posture Alignment and Regulation Technology
 
 ## Overview
-This project is a wearable posture monitoring system designed to detect incorrect posture and provide corrective feedback using sensor-based input and alert mechanisms.
+The Smart Posture Monitoring and Feedback System is a wearable biomedical electronics project designed to detect incorrect body posture and provide real-time corrective feedback. The system aims to support ergonomic health by reducing long-term musculoskeletal strain caused by improper sitting or standing posture.
 
-The system was developed as a biomedical engineering mini project focused on ergonomic health monitoring.
-
+This project was developed as part of an academic biomedical engineering curriculum.
 
 ## Objective
-To design a sensor-based system that can identify improper posture and provide real-time feedback to improve user ergonomics and reduce musculoskeletal strain.
+To design and implement a wearable system capable of monitoring human posture and generating immediate feedback when incorrect posture is detected using sensor-based measurements.
 
 
-## System Concept
+## System Description
+The system continuously monitors body posture using wearable sensors. The acquired data is processed through a microcontroller, where predefined threshold logic is used to classify posture as correct or incorrect. If incorrect posture is detected, the system triggers an alert mechanism to notify the user for correction.
 
-- Posture detection using wearable sensors (e.g., flex sensor / accelerometer concept)
-- Signal processing using threshold-based logic
-- Feedback system using buzzer or vibration motor
-- Real-time alert generation for posture correction
+## System Architecture
 
+Sensor Unit → Signal Acquisition → Microcontroller Processing → Threshold Analysis → Decision System → Feedback Output
 
 ## Working Principle
+1. Wearable sensors continuously capture posture-related body movement data  
+2. Sensor signals are transmitted to a microcontroller  
+3. Embedded firmware processes incoming signals in real time  
+4. Threshold-based logic determines posture correctness  
+5. If incorrect posture is detected, an alert is generated  
+6. User receives immediate feedback to correct posture  
 
-1. Sensors detect body posture angles or bending patterns  
-2. Data is compared with predefined threshold values  
-3. Incorrect posture triggers alert system  
-4. User receives immediate feedback for correction  
+## Hardware Components
+- Arduino Uno / ESP32 microcontroller  
+- MPU6050 IMU sensor / Flex sensor (based on implementation)  
+- Buzzer / vibration motor for feedback alerts  
+- LCD display module (optional output interface)  
+- Supporting passive electronic components  
 
 
 ## Technologies Used
-- Embedded Systems (Arduino / microcontroller concept)
-- Sensor-based data acquisition
-- Basic signal thresholding logic
-- Embedded C (concept/implementation level)
+- Embedded C programming  
+- Microcontroller-based system design  
+- Sensor data acquisition and processing  
+- Threshold-based classification logic  
+- Real-time embedded feedback system  
 
 
-## Status
-Previously implemented prototype  
-Prototype completed during academic project phase
-
-
-## Key Features
+## System Features
 - Real-time posture monitoring  
-- Immediate corrective feedback  
-- Wearable system concept  
+- Wearable sensor-based detection system  
+- Immediate feedback mechanism (audio/vibration alert)  
 - Low-cost biomedical ergonomic solution  
+- Portable embedded system design  
+
+
+## System Workflow
+1. Sensor captures posture data  
+2. Microcontroller reads and processes signals  
+3. Signal values are compared with threshold limits  
+4. Posture state is classified as correct or incorrect  
+5. Alert is triggered if incorrect posture is detected  
+
+
+## Results & Observations
+- The system successfully detects posture deviations based on sensor input  
+- Real-time processing enables immediate feedback response  
+- Alert mechanism effectively notifies users of incorrect posture  
+- Demonstrates feasibility of low-cost wearable ergonomic monitoring systems  
+
+
+## Limitations
+- Calibration depends on sensor positioning and user body type  
+- Accuracy may vary with movement noise and environmental conditions  
+- System requires further optimization for clinical or industrial deployment  
 
 
 ## Future Improvements
-- Machine learning-based posture classification  
-- Mobile app integration for posture tracking  
-- Wireless wearable system (Bluetooth module)  
-- Clinical-grade validation for ergonomic studies  
+- Integration of machine learning for posture classification accuracy improvement  
+- Wireless connectivity for mobile-based posture tracking  
+- Cloud-based posture analytics and reporting  
+- Miniaturized wearable PCB design for improved portability  
+- Enhanced sensor fusion for higher accuracy  
 
+
+## Status
+Prototype successfully built and tested during academic project phase (2024–2025).
 
 ## Author
 Abitha Ganesan  
 B.E. Biomedical Engineering  
 
 GitHub: https://github.com/abithaganesan  
+
+## Note
+This project was developed as part of academic biomedical engineering coursework and demonstrates a functional prototype of a wearable posture monitoring system.
