@@ -34,8 +34,8 @@ To design a sensor-based system that can identify improper posture and provide r
 
 
 ## Status
-✔ Previously implemented prototype  
-⚠ Hardware currently not available (design and implementation completed during project phase)
+Previously implemented prototype  
+Prototype completed during academic project phase
 
 
 ## Key Features
